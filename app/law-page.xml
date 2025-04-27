@@ -1,0 +1,45 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Ley de Indemnización" icon="">
+        <NavigationButton text="Atrás" android.systemIcon="ic_menu_back" tap="onBackButtonTap"/>
+    </ActionBar>
+    <ScrollView>
+        <StackLayout class="p-4">
+            <Label text="Artículo 149. Indemnización por invalidez" class="text-xl font-bold mb-4" textWrap="true" />
+            
+            <Label text="Si al momento de producirse la invalidez el asegurado no cumple con los requisitos mínimos de edad, número de cuotas y densidad de cuotas para recibir la Pensión de Invalidez, se le otorgará, en su lugar, una indemnización por invalidez. Esta indemnización será equivalente a una mensualidad de la pensión que le hubiera correspondido por cada seis meses de cotizaciones acreditadas, siempre que se cumpla con alguna de las siguientes condiciones:" class="text-base mb-4" textWrap="true" />
+            
+            <Label text="Condiciones:" class="text-lg font-bold mb-2" textWrap="true" />
+            
+            <Label text="1. Tener hasta 30 años de edad, haber aportado menos de 36 cuotas y contar con una densidad de al menos 6 cuotas en los últimos 12 meses inmediatamente anteriores a la solicitud." class="text-base mb-2" textWrap="true" />
+            
+            <Label text="2. Tener entre 31 y 40 años de edad, haber aportado menos de 48 cuotas y contar con una densidad de al menos 8 cuotas en los últimos 16 meses inmediatamente anteriores a la solicitud." class="text-base mb-2" textWrap="true" />
+            
+            <Label text="3. Tener entre 41 años de edad y la edad de referencia, haber aportado menos de 60 cuotas y contar con una densidad de al menos 10 cuotas en los últimos 20 meses inmediatamente anteriores a la solicitud." class="text-base mb-2" textWrap="true" />
+            
+            <Label text="Además, esta indemnización también será otorgada a quienes, sin tener derecho a la Pensión de Retiro por Vejez, queden inválidos después de haber alcanzado la edad de referencia establecida en esta reforma." class="text-base mb-4" textWrap="true" />
+
+            <Label text="Calculadora de Indemnización" class="text-xl font-bold mt-4 mb-4" textWrap="true" />
+            
+            <GridLayout rows="auto, auto, auto, auto, auto" columns="*, *" class="mb-4">
+                <Label text="Edad:" class="p-2" row="0" col="0" />
+                <TextField text="{{ edad }}" keyboardType="number" hint="Ingrese su edad" class="p-2 border rounded" row="0" col="1" />
+                
+                <Label text="Cuotas totales:" class="p-2" row="1" col="0" />
+                <TextField text="{{ cuotasTotales }}" keyboardType="number" hint="Número de cuotas" class="p-2 border rounded" row="1" col="1" />
+                
+                <Label text="Cuotas recientes:" class="p-2" row="2" col="0" />
+                <TextField text="{{ cuotasRecientes }}" keyboardType="number" hint="Cuotas en período reciente" class="p-2 border rounded" row="2" col="1" />
+                
+                <Label text="Pensión mensual estimada:" class="p-2" row="3" col="0" />
+                <TextField text="{{ pensionMensual }}" keyboardType="number" hint="Monto mensual" class="p-2 border rounded" row="3" col="1" />
+            </GridLayout>
+
+            <Button text="Calcular Indemnización" tap="{{ calcularIndemnizacion }}" class="-primary mb-4" />
+            
+            <StackLayout class="p-4 bg-gray-100 rounded" visibility="{{ resultadoVisible ? 'visible' : 'collapsed' }}">
+                <Label text="{{ mensajeResultado }}" class="text-lg" textWrap="true" />
+                <Label text="{{ montoIndemnizacion }}" class="text-lg font-bold" textWrap="true" />
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</Page>

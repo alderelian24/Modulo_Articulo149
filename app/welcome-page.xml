@@ -1,0 +1,8 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Bienvenido" icon="" />
+    <StackLayout class="p-4">
+        <Label text="¡Bienvenido!" class="text-4xl text-center mb-4" />
+        <Label text="Sistema de Información Legal" class="text-2xl text-center mb-4" />
+        <Button text="Ver Ley de Indemnización" tap="onNavigateToLaw" class="-primary" />
+    </StackLayout>
+</Page>
