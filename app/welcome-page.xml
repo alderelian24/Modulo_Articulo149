@@ -1,8 +1,16 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
     <ActionBar title="Bienvenido" icon="" />
-    <StackLayout class="p-4">
+    <StackLayout class="p-4" verticalAlignment="center" horizontalAlignment="center" spacing="16">
+
         <Label text="¡Bienvenido!" class="text-4xl text-center mb-4" />
         <Label text="Sistema de Información Legal" class="text-2xl text-center mb-4" />
-        <Button text="Ver Ley de Indemnización" tap="onNavigateToLaw" class="-primary" />
+
+        <!-- Imagen debajo del texto -->
+        <Image src="~/images/ley.jpg" width="250" height="250" stretch="aspectFit" class="mb-6" />
+
+        <!-- Botón en rojo y más grande -->
+        <Button text="Ver Ley de Indemnización" tap="onNavigateToLaw" 
+            class="bg-red-600 text-white text-lg p-4 rounded" />
+        
     </StackLayout>
 </Page>
