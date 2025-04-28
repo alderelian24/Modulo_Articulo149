@@ -5,7 +5,7 @@
     <ScrollView>
         <StackLayout class="p-4">
             <!-- Fondo para la ley -->
-            <StackLayout backgroundColor="#f0f0f0" padding="16" borderRadius="8" marginBottom="16">
+            <StackLayout backgroundColor="#8dcfec" padding="16" borderRadius="8" marginBottom="16">
                 <Label text="Artículo 149. Indemnización por invalidez" class="text-xl font-bold mb-4" textWrap="true" />
                 
                 <Label text="Si al momento de producirse la invalidez el asegurado no cumple con los requisitos mínimos de edad, número de cuotas y densidad de cuotas para recibir la Pensión de Invalidez, se le otorgará, en su lugar, una indemnización por invalidez. Esta indemnización será equivalente a una mensualidad de la pensión que le hubiera correspondido por cada seis meses de cotizaciones acreditadas, siempre que se cumpla con alguna de las siguientes condiciones:" class="text-base mb-4" textWrap="true" />
