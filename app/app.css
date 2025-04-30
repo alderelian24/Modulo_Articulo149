@@ -1,9 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 .bg-yellow-300 {
-    background-color: #FCD34D;
+    background-color: #50EBEC;
 }
 
 .text-white {
