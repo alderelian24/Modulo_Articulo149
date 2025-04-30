@@ -1,21 +1,35 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" class="bg-yellow-300">
     <StackLayout verticalAlignment="center" horizontalAlignment="center" spacing="24" padding="32">
-        
+
+        <!-- Bienvenida centrada -->
+        <Label text="¡Bienvenido!"
+               class="text-white text-3xl font-bold text-center"
+               width="100%" />
+
         <!-- Título -->
         <Label text="Sistema de Información Legal"
-               class="text-white text-3xl font-bold text-center" />
+               class="text-white text-3xl font-bold text-center"
+               textWrap="true"
+               width="90%" />
 
-        <!-- Imagen central -->
-        <Image src="~/images/ley.jpg" width="220" height="220" stretch="aspectFit" />
+        <!-- Imagen con bordes redondeados -->
+        <Image id="imgLey"
+               src="~/images/ley.jpg"
+               width="220"
+               height="220"
+               stretch="aspectFill"
+               class="rounded-image" />
 
-        <!-- Subtítulo -->
+        <!-- Subtítulo centrado -->
         <Label text="Conozca sus derechos de forma rápida y clara"
-               class="text-gray-800 text-base text-center px-6" textWrap="true" />
+               class="text-gray-800 text-base text-center"
+               textWrap="true"
+               width="90%" />
 
         <!-- Botón rojo estilizado -->
-        <Button text="Ver Ley de Indemnización"
+        <Button id="btnIndemnizacion"
+                text="VER LEY DE INDEMNIZACIÓN"
                 tap="onNavigateToLaw"
-                class="bg-red-600 text-white text-xl font-bold py-3 px-6 rounded-full mt-6" />
-        
+                class="bg-red-600 text-white text-xl font-bold py-3 px-6 rounded-full mt-6 btn-scale btn-pressed" />
     </StackLayout>
 </Page>

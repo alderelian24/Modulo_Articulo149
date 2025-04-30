@@ -4,7 +4,7 @@
 }
 
 .text-white {
-    color: white;
+    color: #1F2937;
 }
 
 .text-gray-800 {
@@ -36,3 +36,23 @@
     padding-top: 12;
     padding-bottom: 12;
 }
+
+
+
+.btn-scale:active {
+    scale: 0.97;
+}
+
+.bg-red-600 {
+    background-color: #a7a7a7; 
+}
+
+.btn-pressed:active {
+    background-color: #53565a; 
+}
+
+.rounded-image {
+    border-radius: 20;
+    overflow: hidden;
+}
+

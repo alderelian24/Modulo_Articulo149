@@ -10,7 +10,7 @@
                 
                 <Label text="Si al momento de producirse la invalidez el asegurado no cumple con los requisitos mínimos de edad, número de cuotas y densidad de cuotas para recibir la Pensión de Invalidez, se le otorgará, en su lugar, una indemnización por invalidez. Esta indemnización será equivalente a una mensualidad de la pensión que le hubiera correspondido por cada seis meses de cotizaciones acreditadas, siempre que se cumpla con alguna de las siguientes condiciones:" class="text-base mb-4" textWrap="true" />
                 
-                <Label text="Condiciones:" class="text-lg font-bold mb-2" textWrap="true" />
+                <Label text="Condiciones:" class="text-xl font-bold mb-3" textWrap="true" />
                 
                 <Label text="1. Tener hasta 30 años de edad, haber aportado menos de 36 cuotas y contar con una densidad de al menos 6 cuotas en los últimos 12 meses inmediatamente anteriores a la solicitud." class="text-base mb-2" textWrap="true" />
                 
