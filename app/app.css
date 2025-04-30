@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-yellow-300 {
+    background-color: #FCD34D;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-gray-800 {
+    color: #1F2937;
+}
+
+.text-3xl {
+    font-size: 28;
+}
+
+.text-xl {
+    font-size: 22;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.rounded-full {
+    border-radius: 30;
+}
+
+.px-6 {
+    padding-left: 24;
+    padding-right: 24;
+}
+
+.py-3 {
+    padding-top: 12;
+    padding-bottom: 12;
+}

@@ -1,16 +1,21 @@
-<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
-    <ActionBar title="Bienvenido" icon="" />
-    <StackLayout class="p-4" verticalAlignment="center" horizontalAlignment="center" spacing="16">
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" class="bg-yellow-300">
+    <StackLayout verticalAlignment="center" horizontalAlignment="center" spacing="24" padding="32">
+        
+        <!-- Título -->
+        <Label text="Sistema de Información Legal"
+               class="text-white text-3xl font-bold text-center" />
 
-        <Label text="¡Bienvenido!" class="text-4xl text-center mb-4" />
-        <Label text="Sistema de Información Legal" class="text-2xl text-center mb-4" />
+        <!-- Imagen central -->
+        <Image src="~/images/ley.jpg" width="220" height="220" stretch="aspectFit" />
 
-        <!-- Imagen debajo del texto -->
-        <Image src="~/images/ley.jpg" width="250" height="250" stretch="aspectFit" class="mb-6" />
+        <!-- Subtítulo -->
+        <Label text="Conozca sus derechos de forma rápida y clara"
+               class="text-gray-800 text-base text-center px-6" textWrap="true" />
 
-        <!-- Botón en rojo y más grande -->
-        <Button text="Ver Ley de Indemnización" tap="onNavigateToLaw" 
-            class="bg-red-600 text-white text-lg p-4 rounded" />
+        <!-- Botón rojo estilizado -->
+        <Button text="Ver Ley de Indemnización"
+                tap="onNavigateToLaw"
+                class="bg-red-600 text-white text-xl font-bold py-3 px-6 rounded-full mt-6" />
         
     </StackLayout>
 </Page>
