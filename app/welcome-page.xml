@@ -1,17 +1,22 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" class="bg-yellow-300">
     <StackLayout verticalAlignment="center" horizontalAlignment="center" spacing="24" padding="32">
 
+       <StackLayout margin="4 0 50 80" borderRadius="24" >
         <!-- Bienvenida centrada -->
         <Label text="¡Bienvenido!"
                class="text-white text-3xl font-bold text-center"
                width="100%" />
+       </StackLayout>
 
+       <StackLayout margin="4 0 15 0" borderRadius="24" >
         <!-- Título -->
-        <Label text="Sistema de Información Legal"
+        <Label text="Sistema de Información Legal de Panamá"
                class="text-white text-3xl font-bold text-center"
                textWrap="true"
                width="90%" />
+       </StackLayout>
 
+        <StackLayout margin="4 0 15 0" borderRadius="24" >
         <!-- Imagen con bordes redondeados -->
         <Image id="imgLey"
                src="~/images/ley.jpg"
@@ -19,12 +24,15 @@
                height="220"
                stretch="aspectFill"
                class="rounded-image" />
-
+       </StackLayout>
+       
+       <StackLayout margin="40 0 15 0" borderRadius="24" >
         <!-- Subtítulo centrado -->
         <Label text="Conozca sus derechos de forma rápida y clara"
                class="text-gray-800 text-base text-center"
                textWrap="true"
                width="90%" />
+       </StackLayout>
 
         <!-- Botón rojo estilizado -->
         <Button id="btnIndemnizacion"
